@@ -1,0 +1,721 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.props" Condition="Exists('..\..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A5C4689D-40F2-4B8B-B856-99968A4735F2}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>INKWRX_Mobile.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>INKWRX_Mobile.iOS</AssemblyName>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>True</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchSdkVersion>9.3</MtouchSdkVersion>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchProfiling>False</MtouchProfiling>
+    <MtouchFastDev>False</MtouchFastDev>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchEnableBitcode>False</MtouchEnableBitcode>
+    <OptimizePNGs>True</OptimizePNGs>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchFloat32>False</MtouchFloat32>
+    <DeviceSpecificBuild>False</DeviceSpecificBuild>
+    <MtouchI18n>west</MtouchI18n>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <BuildIpa>True</BuildIpa>
+    <CodesignKey>iPhone Distribution: Destiny Wireless Limited (F5SSZF59RK)</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>INKWRX Mobile Ad-hoc</CodesignProvision>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchDebug>False</MtouchDebug>
+    <MtouchProfiling>False</MtouchProfiling>
+    <MtouchFastDev>False</MtouchFastDev>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchEnableBitcode>False</MtouchEnableBitcode>
+    <OptimizePNGs>True</OptimizePNGs>
+    <MtouchFloat32>False</MtouchFloat32>
+    <MtouchI18n>west</MtouchI18n>
+    <MtouchSdkVersion>9.3</MtouchSdkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchSdkVersion>9.3</MtouchSdkVersion>
+    <MtouchI18n>west</MtouchI18n>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CustomRenderers\BorderlessEntryViewRenderer.cs" />
+    <Compile Include="CustomRenderers\CameraPageRenderer.cs" />
+    <Compile Include="CustomRenderers\CameraRenderer.cs" />
+    <Compile Include="CustomRenderers\DecimalFieldRenderer.cs" />
+    <Compile Include="CustomRenderers\DrawingFieldEntryRenderer.cs" />
+    <Compile Include="CustomRenderers\DrawingFieldRenderer.cs" />
+    <Compile Include="CustomRenderers\InkwrxBasePageRenderer.cs" />
+    <Compile Include="CustomRenderers\InkwrxFrameRenderer.cs" />
+    <Compile Include="CustomRenderers\ISOFieldRenderer.cs" />
+    <Compile Include="CustomRenderers\NotesFieldRenderer.cs" />
+    <Compile Include="CustomRenderers\RectangleViewRenderer.cs" />
+    <Compile Include="DependencyServices\BackgroundTaskHandler.cs" />
+    <Compile Include="DependencyServices\CryptographyTools.cs" />
+    <Compile Include="DependencyServices\DatabaseFileHelper.cs" />
+    <Compile Include="DependencyServices\DeviceDetailsService.cs" />
+    <Compile Include="DependencyServices\FormFileTools.cs" />
+    <Compile Include="DependencyServices\ImageResizer.cs" />
+    <Compile Include="DependencyServices\OrientationService.cs" />
+    <Compile Include="DependencyServices\PhotoFileSystem.cs" />
+    <Compile Include="DependencyServices\ToastNotificationHandler.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="UI\CameraView.cs" />
+    <Compile Include="UI\DrawingEntryView.cs" />
+    <Compile Include="UI\DrawingView.cs" />
+    <Compile Include="Util\iOSExtensions.cs" />
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist">
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="packages.config" />
+    <Compile Include="CustomRenderers\DrawingFieldEntryPageRenderer.cs" />
+    <Compile Include="CustomRenderers\FormListItemRenderer.cs" />
+    <Compile Include="CustomRenderers\TextLabelViewRenderer.cs" />
+    <Compile Include="CustomRenderers\InkwrxDatePickerRenderer.cs" />
+    <Compile Include="CustomRenderers\InkwrxTimePickerRenderer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Reachability.Net, Version=1.0.5598.29013, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Reachability.Net.1.0.2\lib\Xamarin.iOS10\Reachability.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Reachability.Net.XamarinIOS, Version=1.0.5598.29567, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Reachability.Net.1.0.2\lib\Xamarin.iOS10\Reachability.Net.XamarinIOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Destiny.Encryption">
+      <HintPath>..\INKWRX_Mobile\Destiny.Encryption.dll</HintPath>
+    </Reference>
+    <Reference Include="BCrypt.Net">
+      <HintPath>..\INKWRX_Mobile.Droid\References\BCrypt.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="INKWRXFormTools-Mobile">
+      <HintPath>..\INKWRX_Mobile\INKWRXFormTools-Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="INKWRXPhotoTools-Mobile">
+      <HintPath>..\INKWRX_Mobile\INKWRXPhotoTools-Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Permissions.Abstractions">
+      <HintPath>..\..\packages\Plugin.Permissions.2.1.0\lib\Xamarin.iOS10\Plugin.Permissions.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Permissions">
+      <HintPath>..\..\packages\Plugin.Permissions.2.1.0\lib\Xamarin.iOS10\Plugin.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\..\packages\SQLitePCLRaw.core.1.1.9\lib\Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.sqlite3">
+      <HintPath>..\..\packages\SQLitePCLRaw.provider.sqlite3.ios_unified.1.1.9\lib\Xamarin.iOS10\SQLitePCLRaw.provider.sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green">
+      <HintPath>..\..\packages\SQLitePCLRaw.bundle_green.1.1.9\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\..\packages\SQLitePCLRaw.bundle_green.1.1.9\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\..\packages\sqlite-net-pcl.1.4.118\lib\netstandard1.1\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Geolocator.Abstractions">
+      <HintPath>..\..\packages\Xam.Plugin.Geolocator.4.1.3\lib\Xamarin.iOS10\Plugin.Geolocator.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Geolocator">
+      <HintPath>..\..\packages\Xam.Plugin.Geolocator.4.1.3\lib\Xamarin.iOS10\Plugin.Geolocator.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\..\packages\Xamarin.Forms.2.5.0.121934\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\..\packages\Xamarin.Forms.2.5.0.121934\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.iOS">
+      <HintPath>..\..\packages\Xamarin.Forms.2.5.0.121934\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\..\packages\Xamarin.Forms.2.5.0.121934\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\INKWRX_Mobile\INKWRX_Mobile.csproj">
+      <Project>{a69debd7-2516-4cda-b68c-19c295d05686}</Project>
+      <Name>INKWRX_Mobile</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MessageBarLib\MessageBarLib.csproj">
+      <Project>{2848abc8-92cf-4d70-bfd1-218e6d00d8bd}</Project>
+      <Name>MessageBarLib</Name>
+      <IsAppExtension>false</IsAppExtension>
+      <IsWatchApp>false</IsWatchApp>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bar_icon_camera%402x.png" />
+    <BundleResource Include="Resources\Fonts\Arial Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\Arial Narrow Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\arial.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\ARIALN.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\Tahoma Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\tahoma.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\Times New Roman Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\times.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bar_icon_gallery%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\AutoSaveScreen\iw_app_ios_background_autosave%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\AutoSaveScreen\iw_app_ios_background_autosave%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\AutoSaveScreen\iw_app_ios_background_landscape_autosave%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\AutoSaveScreen\iw_app_ios_background_landscape_autosave%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\FormScreen\iw_app_ios_background_form%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\FormScreen\iw_app_ios_background_form%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\FormScreen\iw_app_ios_background_landscape_form%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\FormScreen\iw_app_ios_background_landscape_form%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\HistoryScreen\iw_app_ios_background_history%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\HistoryScreen\iw_app_ios_background_history%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\HistoryScreen\iw_app_ios_background_landscape_history%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\HistoryScreen\iw_app_ios_background_landscape_history%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\HomeScreen\iw_app_ios_background_home%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\HomeScreen\iw_app_ios_background_home%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\HomeScreen\iw_app_ios_background_landscape_home%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\HomeScreen\iw_app_ios_background_landscape_home%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\LoginScreen\iw_app_ios_login_background%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\LoginScreen\iw_app_ios_login_background%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\ParkedScreen\iw_app_ios_background_landscape_parked%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\ParkedScreen\iw_app_ios_background_landscape_parked%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\ParkedScreen\iw_app_ios_background_parked%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\ParkedScreen\iw_app_ios_background_parked%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\PendingScreen\iw_app_ios_background_landscape_pending%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\PendingScreen\iw_app_ios_background_landscape_pending%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\PendingScreen\iw_app_ios_background_pending%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\PendingScreen\iw_app_ios_background_pending%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\SentScreen\iw_app_ios_background_landscape_sent%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\SentScreen\iw_app_ios_background_landscape_sent%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\SentScreen\iw_app_ios_background_sent%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Backgrounds\SentScreen\iw_app_ios_background_sent%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\AutoSaveScreen\iw_app_ios_icon_autosave%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\AutoSaveScreen\iw_app_ios_icon_autosave%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\iw_app_ios_icon_folder%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\iw_app_ios_icon_folder%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\iw_app_ios_icon_form%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\iw_app_ios_icon_form%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\iw_app_ios_icon_prepop%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\iw_app_ios_icon_prepop%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\NavBar\iw_app_ios_navbar_icon_addfolder%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\NavBar\iw_app_ios_navbar_icon_addfolder%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\NavBar\iw_app_ios_navbar_icon_refresh%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\NavBar\iw_app_ios_navbar_icon_refresh%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\ToolBar\iw_app_ios_toolbar_icon_camera%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\ToolBar\iw_app_ios_toolbar_icon_camera%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\ToolBar\iw_app_ios_toolbar_icon_gallery%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\ToolBar\iw_app_ios_toolbar_icon_gallery%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\ToolBar\iw_app_ios_toolbar_icon_prepop%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\ToolBar\iw_app_ios_toolbar_icon_prepop%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\ToolBar\iw_app_ios_toolbar_icon_send%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\ToolBar\iw_app_ios_toolbar_icon_send%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HistoryScreen\iw_app_ios_icon_autosave%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HistoryScreen\iw_app_ios_icon_autosave%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HistoryScreen\iw_app_ios_icon_history%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HistoryScreen\iw_app_ios_icon_history%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HistoryScreen\iw_app_ios_icon_parked%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HistoryScreen\iw_app_ios_icon_parked%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HistoryScreen\iw_app_ios_icon_pending%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HistoryScreen\iw_app_ios_icon_pending%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HistoryScreen\iw_app_ios_icon_send%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HistoryScreen\iw_app_ios_icon_send%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HistoryScreen\NavBar\iw_app_ios_navbar_icon_filter%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HistoryScreen\NavBar\iw_app_ios_navbar_icon_filter%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HistoryScreen\NavBar\iw_app_ios_navbar_icon_home%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HistoryScreen\NavBar\iw_app_ios_navbar_icon_home%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HomeScreen\iw_app_ios_icon_autosave%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HomeScreen\iw_app_ios_icon_autosave%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HomeScreen\iw_app_ios_icon_form%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HomeScreen\iw_app_ios_icon_form%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HomeScreen\iw_app_ios_icon_history%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HomeScreen\iw_app_ios_icon_history%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HomeScreen\iw_app_ios_icon_parked%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HomeScreen\iw_app_ios_icon_parked%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HomeScreen\iw_app_ios_icon_pending%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HomeScreen\iw_app_ios_icon_pending%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HomeScreen\iw_app_ios_icon_prepop%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HomeScreen\iw_app_ios_icon_prepop%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HomeScreen\iw_app_ios_icon_send%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HomeScreen\iw_app_ios_icon_send%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\ParkedScreen\iw_app_ios_icon_parked%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\ParkedScreen\iw_app_ios_icon_parked%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\ParkedScreen\NavBar\iw_app_ios_navbar_icon_filter%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\ParkedScreen\NavBar\iw_app_ios_navbar_icon_filter%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\ParkedScreen\NavBar\iw_app_ios_navbar_icon_home%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\ParkedScreen\NavBar\iw_app_ios_navbar_icon_home%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\PendingScreen\iw_app_ios_icon_pending%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\PendingScreen\iw_app_ios_icon_pending%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\PendingScreen\NavBar\iw_app_ios_navbar_icon_filter%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\PendingScreen\NavBar\iw_app_ios_navbar_icon_filter%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\PendingScreen\NavBar\iw_app_ios_navbar_icon_home%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\PendingScreen\NavBar\iw_app_ios_navbar_icon_home%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\SentScreen\iw_app_ios_icon_send%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\SentScreen\iw_app_ios_icon_send%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\SentScreen\NavBar\iw_app_ios_navbar_icon_filter%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\SentScreen\NavBar\iw_app_ios_navbar_icon_filter%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\SentScreen\NavBar\iw_app_ios_navbar_icon_home%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\SentScreen\NavBar\iw_app_ios_navbar_icon_home%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\SignaturePopoutScreen\iw_app_ios_icon_cancel%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\SignaturePopoutScreen\iw_app_ios_icon_cancel%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\SignaturePopoutScreen\iw_app_ios_icon_ok%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\SignaturePopoutScreen\iw_app_ios_icon_ok%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\SignaturePopoutScreen\iw_app_ios_icon_undo%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\SignaturePopoutScreen\iw_app_ios_icon_undo%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LaunchScreen\iw_app_ios_launch screen_large.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LaunchScreen\iw_app_ios_launch screen_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\INKWRXMobile.xcassets\AppIcons.appiconset\app_icon@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\INKWRXMobile.xcassets\AppIcons.appiconset\app_icon@3x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\INKWRXMobile.xcassets\AppIcons.appiconset\app_spotlight_icon@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\INKWRXMobile.xcassets\AppIcons.appiconset\app_spotlight_icon@3x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\INKWRXMobile.xcassets\AppIcons.appiconset\app_spotlight_icon_80@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\INKWRXMobile.xcassets\AppIcons.appiconset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\INKWRXMobile.xcassets\LaunchImages.launchimage\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\INKWRXMobile.xcassets\LaunchImages.launchimage\launch_screen_iphone.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\INKWRXMobile.xcassets\LaunchImages.launchimage\launch_screen_retina.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\INKWRXMobile.xcassets\AppIcons.appiconset\app_spotlight_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\LoginScreen\login_inkwrk_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\LoginScreen\login_tick_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\LoginScreen\login_tick_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\NavBar\iw_app_ios_navbar_icon_deletefolder%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\NavBar\iw_app_ios_navbar_icon_deletefolder%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\LoginScreen\iw_app_ios_icon_username%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\LoginScreen\iw_app_ios_icon_boxtick%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\LoginScreen\iw_app_ios_icon_boxtick%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\LoginScreen\iw_app_ios_icon_boxuntick%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\LoginScreen\iw_app_ios_icon_boxuntick%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\LoginScreen\iw_app_ios_icon_password%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\LoginScreen\iw_app_ios_icon_password%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\LoginScreen\iw_app_ios_icon_username%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\LoginScreen\iw_app_ios_logo%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\LoginScreen\iw_app_ios_logo%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HistoryScreen\NavBar\iw_app_ios_icon_sort%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\HistoryScreen\NavBar\iw_app_ios_icon_sort%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\radioChecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\radioUnChecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bar_icon_attach_active%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\NavBar\iw_app_ios_icon_clear%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\NavBar\iw_app_ios_icon_clear%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\SignaturePopoutScreen\iw_app_ios_icon_erase%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\SignaturePopoutScreen\iw_app_ios_icon_erase%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\NavBar\iw_app_ios_icon_remove%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\FormScreen\NavBar\iw_app_ios_icon_remove%402x.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets')" />
+  <Import Project="..\..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets')" />
+</Project>

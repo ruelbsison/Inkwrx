@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="72df940f-c818-4934-a7f0-38acb147d32f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://inkworksprelive.destinywireless.com/formmanagersec/service/DestFormServiceSec.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="1f1ced39-f91c-4945-8851-9db816524f21" SourceId="1" SourceUrl="http://inkworksprelive.destinywireless.com/formmanagersec/service/DestFormServiceSec.svc/mex" />
+    <MetadataFile FileName="service1.wsdl" MetadataType="Wsdl" ID="e550e074-81df-49c6-8def-64265a50c002" SourceId="1" SourceUrl="http://inkworksprelive.destinywireless.com/formmanagersec/service/DestFormServiceSec.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="66782dd6-88ab-4c22-9816-a699bf5e829d" SourceId="1" SourceUrl="http://inkworksprelive.destinywireless.com/formmanagersec/service/DestFormServiceSec.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="c80bc5d1-d942-419e-983e-43cab2c9b2fb" SourceId="1" SourceUrl="http://inkworksprelive.destinywireless.com/formmanagersec/service/DestFormServiceSec.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

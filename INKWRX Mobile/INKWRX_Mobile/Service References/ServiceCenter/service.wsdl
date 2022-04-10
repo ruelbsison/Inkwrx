@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://destinywireless.com/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://tempuri.org/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SvcCenterSecService" targetNamespace="http://destinywireless.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://tempuri.org/" location="" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://destinywireless.com/Imports">
+      <xsd:import namespace="http://destinywireless.com/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="DestInputMsg">
+    <wsdl:part name="parameters" element="tns:DestInputMsg" />
+  </wsdl:message>
+  <wsdl:message name="DestRespMessage">
+    <wsdl:part name="parameters" element="tns:DestRespMessage" />
+  </wsdl:message>
+  <wsdl:portType name="ISvcCenterSecService">
+    <wsdl:operation name="SendData">
+      <wsdl:input wsaw:Action="http://destinywireless.com/ISvcCenterSecService/SendData" name="DestInputMsg" message="tns:DestInputMsg" />
+      <wsdl:output wsaw:Action="http://destinywireless.com/ISvcCenterSecService/SendDataResponse" name="DestRespMessage" message="tns:DestRespMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="SvcCenterSecService">
+    <wsdl:port name="WSHttpBinding_ISvcCenterSecService" binding="i0:WSHttpBinding_ISvcCenterSecService">
+      <soap12:address location="http://prelivedb.destinywireless.local/servicecentersec/service/SvcCenterSecService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://prelivedb.destinywireless.local/servicecentersec/service/SvcCenterSecService.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="WSHttpBinding_ISvcCenterSecService1" binding="i0:WSHttpBinding_ISvcCenterSecService1">
+      <soap12:address location="https://prelivedb.destinywireless.local/servicecentersec/service/SvcCenterSecService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>https://prelivedb.destinywireless.local/servicecentersec/service/SvcCenterSecService.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

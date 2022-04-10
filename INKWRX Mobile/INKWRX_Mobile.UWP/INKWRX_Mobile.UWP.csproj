@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{CF9EDF98-9A48-4A61-9206-4017E6F7DB59}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>INKWRX_Mobile.UWP</RootNamespace>
+    <AssemblyName>INKWRX_Mobile.UWP</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.14393.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.14393.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>Windows_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomRenderers\BorderlessEntryRenderer.cs" />
+    <Compile Include="CustomRenderers\CameraRenderer.cs" />
+    <Compile Include="CustomRenderers\DecimalFieldRenderer.cs" />
+    <Compile Include="CustomRenderers\DrawingFieldEntryRenderer.cs" />
+    <Compile Include="CustomRenderers\DrawingFieldRenderer.cs" />
+    <Compile Include="CustomRenderers\ISOFieldRenderer.cs" />
+    <Compile Include="CustomRenderers\NotesFieldRenderer.cs" />
+    <Compile Include="CustomRenderers\RectangleViewRenderer.cs" />
+    <Compile Include="CustomRenderers\SquareFrameRenderer.cs" />
+    <Compile Include="DependencyServices\CryptographyTools.cs" />
+    <Compile Include="DependencyServices\DatabaseFileHelper.cs" />
+    <Compile Include="DependencyServices\DeviceDetailsService.cs" />
+    <Compile Include="DependencyServices\FormFileTools.cs" />
+    <Compile Include="DependencyServices\OrientationService.cs" />
+    <Compile Include="DependencyServices\PhotoFileSystem.cs" />
+    <Compile Include="DependencyServices\ToastNotificationHandler.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\CameraView.cs" />
+    <Compile Include="UI\DrawingEntryView.cs" />
+    <Compile Include="UI\DrawingView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="Windows_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Backgrounds\AutoSaveScreen\iw_app_ios_background_autosave.png" />
+    <Content Include="Backgrounds\AutoSaveScreen\iw_app_ios_background_landscape_autosave.png" />
+    <Content Include="Backgrounds\FormScreen\iw_app_ios_background_form.png" />
+    <Content Include="Backgrounds\FormScreen\iw_app_ios_background_landscape_form.png" />
+    <Content Include="Backgrounds\HistoryScreen\iw_app_ios_background_history.png" />
+    <Content Include="Backgrounds\HistoryScreen\iw_app_ios_background_landscape_history.png" />
+    <Content Include="Backgrounds\HomeScreen\iw_app_ios_background_home.png" />
+    <Content Include="Backgrounds\HomeScreen\iw_app_ios_background_landscape_home.png" />
+    <Content Include="Backgrounds\LoginScreen\iw_app_ios_login_background.png" />
+    <Content Include="Backgrounds\ParkedScreen\iw_app_ios_background_landscape_parked.png" />
+    <Content Include="Backgrounds\ParkedScreen\iw_app_ios_background_parked.png" />
+    <Content Include="Backgrounds\PendingScreen\iw_app_ios_background_landscape_pending.png" />
+    <Content Include="Backgrounds\PendingScreen\iw_app_ios_background_pending.png" />
+    <Content Include="Backgrounds\SentScreen\iw_app_ios_background_landscape_sent.png" />
+    <Content Include="Backgrounds\SentScreen\iw_app_ios_background_sent.png" />
+    <Content Include="bar_icon_attach_active.png" />
+    <Content Include="bar_icon_camera.png" />
+    <Content Include="bar_icon_gallery.png" />
+    <Content Include="Icons\AutoSaveScreen\iw_app_ios_icon_autosave.png" />
+    <Content Include="Icons\FormScreen\iw_app_ios_icon_folder.png" />
+    <Content Include="Icons\FormScreen\iw_app_ios_icon_form.png" />
+    <Content Include="Icons\FormScreen\iw_app_ios_icon_prepop.png" />
+    <Content Include="Icons\FormScreen\NavBar\iw_app_ios_icon_clear.png" />
+    <Content Include="Icons\FormScreen\NavBar\iw_app_ios_icon_remove.png" />
+    <Content Include="Icons\FormScreen\NavBar\iw_app_ios_navbar_icon_addfolder.png" />
+    <Content Include="Icons\FormScreen\NavBar\iw_app_ios_navbar_icon_deletefolder.png" />
+    <Content Include="Icons\FormScreen\NavBar\iw_app_ios_navbar_icon_refresh.png" />
+    <Content Include="Icons\FormScreen\ToolBar\iw_app_ios_toolbar_icon_camera.png" />
+    <Content Include="Icons\FormScreen\ToolBar\iw_app_ios_toolbar_icon_gallery.png" />
+    <Content Include="Icons\FormScreen\ToolBar\iw_app_ios_toolbar_icon_prepop.png" />
+    <Content Include="Icons\FormScreen\ToolBar\iw_app_ios_toolbar_icon_send.png" />
+    <Content Include="Icons\HistoryScreen\iw_app_ios_icon_autosave.png" />
+    <Content Include="Icons\HistoryScreen\iw_app_ios_icon_history.png" />
+    <Content Include="Icons\HistoryScreen\iw_app_ios_icon_parked.png" />
+    <Content Include="Icons\HistoryScreen\iw_app_ios_icon_pending.png" />
+    <Content Include="Icons\HistoryScreen\iw_app_ios_icon_send.png" />
+    <Content Include="Icons\HistoryScreen\NavBar\iw_app_ios_icon_sort.png" />
+    <Content Include="Icons\HistoryScreen\NavBar\iw_app_ios_navbar_icon_filter.png" />
+    <Content Include="Icons\HistoryScreen\NavBar\iw_app_ios_navbar_icon_home.png" />
+    <Content Include="Icons\HomeScreen\iw_app_ios_icon_autosave.png" />
+    <Content Include="Icons\HomeScreen\iw_app_ios_icon_form.png" />
+    <Content Include="Icons\HomeScreen\iw_app_ios_icon_history.png" />
+    <Content Include="Icons\HomeScreen\iw_app_ios_icon_parked.png" />
+    <Content Include="Icons\HomeScreen\iw_app_ios_icon_pending.png" />
+    <Content Include="Icons\HomeScreen\iw_app_ios_icon_prepop.png" />
+    <Content Include="Icons\HomeScreen\iw_app_ios_icon_send.png" />
+    <Content Include="Icons\LoginScreen\iw_app_ios_icon_boxtick.png" />
+    <Content Include="Icons\LoginScreen\iw_app_ios_icon_boxuntick.png" />
+    <Content Include="Icons\LoginScreen\iw_app_ios_icon_password.png" />
+    <Content Include="Icons\LoginScreen\iw_app_ios_icon_username.png" />
+    <Content Include="Icons\LoginScreen\iw_app_ios_logo.png" />
+    <Content Include="Icons\LoginScreen\login_inkwrk_logo.png" />
+    <Content Include="Icons\LoginScreen\login_tick_off.png" />
+    <Content Include="Icons\LoginScreen\login_tick_on.png" />
+    <Content Include="Icons\ParkedScreen\iw_app_ios_icon_parked.png" />
+    <Content Include="Icons\ParkedScreen\NavBar\iw_app_ios_navbar_icon_filter.png" />
+    <Content Include="Icons\ParkedScreen\NavBar\iw_app_ios_navbar_icon_home.png" />
+    <Content Include="Icons\PendingScreen\iw_app_ios_icon_pending.png" />
+    <Content Include="Icons\PendingScreen\NavBar\iw_app_ios_navbar_icon_filter.png" />
+    <Content Include="Icons\PendingScreen\NavBar\iw_app_ios_navbar_icon_home.png" />
+    <Content Include="Icons\SentScreen\iw_app_ios_icon_send.png" />
+    <Content Include="Icons\SentScreen\NavBar\iw_app_ios_navbar_icon_filter.png" />
+    <Content Include="Icons\SentScreen\NavBar\iw_app_ios_navbar_icon_home.png" />
+    <Content Include="Icons\SignaturePopoutScreen\iw_app_ios_icon_cancel.png" />
+    <Content Include="Icons\SignaturePopoutScreen\iw_app_ios_icon_erase.png" />
+    <Content Include="Icons\SignaturePopoutScreen\iw_app_ios_icon_ok.png" />
+    <Content Include="Icons\SignaturePopoutScreen\iw_app_ios_icon_undo.png" />
+    <Content Include="LaunchScreen\iw_app_ios_launch screen_large.png" />
+    <Content Include="LaunchScreen\iw_app_ios_launch screen_small.png" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="radioChecked.png" />
+    <Content Include="radioUnChecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\INKWRX_Mobile\INKWRX_Mobile.csproj">
+      <Project>{a69debd7-2516-4cda-b68c-19c295d05686}</Project>
+      <Name>INKWRX_Mobile</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="INKWRXFormTools-Mobile, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\INKWRXForms-CoreLibraries\INKWRX Forms Core Libraries\INKWRXFormTools-Mobile\bin\Release\INKWRXFormTools-Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="INKWRXPhotoTools-Mobile">
+      <HintPath>..\..\..\..\INKWRXForms-CoreLibraries\INKWRX Forms Core Libraries\INKWRXPhotoTools-Mobile\bin\Release\INKWRXPhotoTools-Mobile.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+</Project>

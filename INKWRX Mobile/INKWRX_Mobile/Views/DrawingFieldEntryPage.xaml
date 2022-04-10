@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="INKWRX_Mobile.Views.DrawingFieldEntryPage"
+             BackgroundColor="Silver">
+  <StackLayout Orientation="Horizontal">
+    <Frame x:Name="FieldFrame" HorizontalOptions="StartAndExpand"></Frame>
+    <StackLayout x:Name="ButtonStack">
+      <Image x:Name="UndoButton" />
+      <Image x:Name="ClearButton" />
+      <Image x:Name="OkButton" />
+      <Image x:Name="CancelButton" />
+    </StackLayout>
+  </StackLayout>
+</ContentPage>

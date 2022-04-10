@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>1</integer>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>MinimumOSVersion</key>
+	<string>8.0</string>
+	<key>CFBundleDisplayName</key>
+	<string>Mobile</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.destiny.inkwrxmobile</string>
+	<key>CFBundleIconFiles</key>
+	<array/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>INKWRX needs access to the photo library in order to allow the user to attach these images to a form.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>INKWRX needs access to the camera in order to allow the user to take photos within the app to attach to forms.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>INKWRX needs access to the device&apos;s location in order to add a correct GPS tag to forms.</string>
+	<key>CFBundleName</key>
+	<string>Mobile</string>
+	<key>UIPrerenderedIcon</key>
+	<false/>
+	<key>XSLaunchImageAssets</key>
+	<string>Resources/INKWRXMobile.xcassets/LaunchImages.launchimage</string>
+	<key>XSAppIconAssets</key>
+	<string>Resources/INKWRXMobile.xcassets/AppIcons.appiconset</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Fonts/arial.ttf</string>
+		<string>Fonts/Arial Bold.ttf</string>
+		<string>Fonts/Arial Narrow Bold.ttf</string>
+		<string>Fonts/ARIALN.TTF</string>
+		<string>Fonts/tahoma.ttf</string>
+		<string>Fonts/Tahoma Bold.ttf</string>
+		<string>Fonts/times.ttf</string>
+		<string>Fonts/Times New Roman Bold.ttf</string>
+	</array>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+</dict>
+</plist>
